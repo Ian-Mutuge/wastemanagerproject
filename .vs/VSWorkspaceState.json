@@ -4,11 +4,15 @@
     "\\app",
     "\\app\\Http",
     "\\app\\Http\\Controllers",
-    "\\app\\Models",
+    "\\app\\Http\\Controllers\\Admin",
+    "\\database",
     "\\resources",
     "\\resources\\views",
-    "\\resources\\views\\auth"
+    "\\resources\\views\\admin",
+    "\\resources\\views\\admin\\permissions",
+    "\\resources\\views\\admin\\roles",
+    "\\routes"
   ],
-  "SelectedNode": "\\app\\Http\\Kernel.php",
+  "SelectedNode": "\\routes\\web.php",
   "PreviewInSolutionExplorer": false
 }

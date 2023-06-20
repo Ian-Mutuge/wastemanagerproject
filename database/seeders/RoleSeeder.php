@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Spatie\Permission\Models\HasRoles;
+use Spatie\Permission\Models\Role;
 
 class RoleSeeder extends Seeder
 {
@@ -13,8 +13,8 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-        $role = Role::create(['name' => 'admin']);
-        $role = Role::create(['name' => 'garbage']);
-        $role = Role::create(['name' => 'customer']);
+         Role::create(['name' => 'admin']);
+         Role::create(['name' => 'garbage']);
+         Role::create(['name' => 'customer']);
     }
 }
