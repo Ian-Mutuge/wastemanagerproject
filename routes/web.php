@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,5 +57,7 @@ Route::middleware('auth')->group(function () {
       Route::post('/users/{user}/permissions',[UserController::class,'givePermission'])->name('admin.users.permissions');
      Route::delete('/users/{user}/permissions/{permission}',[UserController::class,'revokePermission'])->name('admin.users.permissions.revoke');
 });
+
+Auth::routes(['verify' => true]);
 
 require __DIR__.'/auth.php';

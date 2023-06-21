@@ -20,6 +20,9 @@
                             type="password"
                             name="password"
                             required autocomplete="current-password" />
+        <x-input-label for="password" :value="__('-8 characters')" />
+        <x-input-label for="password" :value="__('-Contain a symbol')" />
+        <x-input-label for="password" :value="__('-Contain a number')" />
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
