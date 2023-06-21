@@ -111,7 +111,7 @@ h1 span {
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-  <title>Flowtrail UI Sidebar</title>
+  <title>Wastemanager</title>
 </head>
 <body class="antialiased bg-gray-100 dark-mode:bg-gray-900">
     <div class="flex-col w-full md:flex md:flex-row md:min-h-screen">
