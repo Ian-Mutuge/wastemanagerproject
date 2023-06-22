@@ -35,11 +35,15 @@ Route::delete('admin/permissions', [PermissionController::class, 'destroy'])->na
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
 Route::middleware(['auth', 'role:admin'])->name('admin.')->prefix('admin')->group(function(){
     Route::get('/',[IndexController::class,'index'])->name('index');
     Route::resource('/roles',RoleController::class);
      Route::resource('/permissions',PermissionController::class);
 });
+Route::get('/staff', function () {
+    return view('staff');
+})->middleware(['auth', 'role:staff'])->name('staff');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
