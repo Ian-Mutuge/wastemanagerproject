@@ -14,7 +14,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-  <title>Admin dashboard</title>
+  <title> dashboard</title>
 </head>
 <body class="antialiased bg-gray-100 dark-mode:bg-gray-900">
 @if(Session::has'message')
